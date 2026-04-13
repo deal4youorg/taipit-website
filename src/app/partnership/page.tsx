@@ -24,7 +24,7 @@ export default function PartnershipPage() {
           <ul className="space-y-3">
             {benefits.map((b) => (
               <li key={b} className="flex items-start gap-3">
-                <CheckCircle2 size={18} style={{ color: '#0891B2' }} className="mt-0.5 shrink-0" />
+                <CheckCircle2 size={18} style={{ color: '#F5921E' }} className="mt-0.5 shrink-0" />
                 <span className="text-gray-700">{b}</span>
               </li>
             ))}

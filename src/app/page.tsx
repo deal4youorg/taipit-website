@@ -51,19 +51,19 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section
-        style={{ backgroundColor: '#0D1B3E' }}
+        style={{ backgroundColor: '#1A1A1A' }}
         className="relative overflow-hidden"
       >
         <div
           className="absolute inset-0 opacity-10"
           style={{
             backgroundImage:
-              'radial-gradient(circle at 70% 50%, #0891B2 0%, transparent 60%)',
+              'radial-gradient(circle at 70% 50%, #F5921E 0%, transparent 60%)',
           }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="max-w-2xl">
-            <p className="text-cyan-400 text-sm font-semibold uppercase tracking-widest mb-4">
+            <p className="text-sm font-semibold uppercase tracking-widest mb-4" style={{ color: '#F5921E' }}>
               Официальный дистрибьютор InWin &amp; Powerman
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
@@ -77,7 +77,7 @@ export default function HomePage() {
               <Link
                 href="/catalog"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-md font-semibold text-white transition-colors"
-                style={{ backgroundColor: '#0891B2' }}
+                style={{ backgroundColor: '#F5921E' }}
               >
                 Смотреть каталог
                 <ArrowRight size={18} />
@@ -103,17 +103,17 @@ export default function HomePage() {
               <Link
                 key={href}
                 href={href}
-                className="group bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md hover:border-cyan-300 transition-all duration-200"
+                className="group bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md hover:border-orange-300 transition-all duration-200"
               >
                 <div
                   className="w-12 h-12 rounded-lg flex items-center justify-center mb-4"
-                  style={{ backgroundColor: '#EFF6FF' }}
+                  style={{ backgroundColor: '#FFF4E8' }}
                 >
-                  <Icon size={24} style={{ color: '#0891B2' }} />
+                  <Icon size={24} style={{ color: '#F5921E' }} />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1">{title}</h3>
                 <p className="text-sm text-gray-500">{description}</p>
-                <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-cyan-600">
+                <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium" style={{ color: '#F5921E' }}>
                   Перейти <ArrowRight size={14} />
                 </span>
               </Link>
@@ -132,7 +132,8 @@ export default function HomePage() {
             </div>
             <Link
               href="/catalog"
-              className="hidden sm:flex items-center gap-1 text-sm font-medium text-cyan-600 hover:underline"
+              className="hidden sm:flex items-center gap-1 text-sm font-medium hover:underline"
+              style={{ color: '#F5921E' }}
             >
               Весь каталог <ArrowRight size={14} />
             </Link>
@@ -158,7 +159,9 @@ export default function HomePage() {
                       </span>
                     )}
                   </div>
-                  <h3 className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                  <h3 className="font-semibold text-gray-900 transition-colors" style={{ color: undefined }}
+                    onMouseEnter={undefined}
+                  >
                     {product.title}
                   </h3>
                   <p className="text-xs text-gray-400 mt-1">SKU: {product.sku}</p>
@@ -170,19 +173,19 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section style={{ backgroundColor: '#0891B2' }} className="py-14">
+      <section style={{ backgroundColor: '#F5921E' }} className="py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
             Не нашли нужную позицию?
           </h2>
-          <p className="text-cyan-100 mb-8 max-w-xl mx-auto">
+          <p className="mb-8 max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.85)' }}>
             Оставьте заявку — наши менеджеры подберут оборудование под ваши задачи
             или уточнят наличие нужной модели.
           </p>
           <Link
             href="/contacts"
             className="inline-flex items-center gap-2 px-8 py-3 rounded-md font-semibold bg-white hover:bg-gray-50 transition-colors"
-            style={{ color: '#0D1B3E' }}
+            style={{ color: '#1A1A1A' }}
           >
             Оставить заявку
             <ArrowRight size={18} />

@@ -21,9 +21,9 @@ export default function ContactsPage() {
               <div key={label} className="flex items-start gap-4">
                 <div
                   className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
-                  style={{ backgroundColor: '#EFF6FF' }}
+                  style={{ backgroundColor: '#FFF4E8' }}
                 >
-                  <Icon size={18} style={{ color: '#0891B2' }} />
+                  <Icon size={18} style={{ color: '#F5921E' }} />
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 font-medium uppercase tracking-wide">{label}</p>

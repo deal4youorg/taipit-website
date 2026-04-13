@@ -10,7 +10,8 @@ export default async function ArticlePage({ params }: { params: Params }) {
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <Link
         href="/news"
-        className="inline-flex items-center gap-2 text-sm text-cyan-600 hover:underline mb-8"
+        className="inline-flex items-center gap-2 text-sm hover:underline mb-8"
+        style={{ color: '#F5921E' }}
       >
         <ArrowLeft size={14} /> К новостям
       </Link>

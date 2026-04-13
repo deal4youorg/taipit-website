@@ -73,7 +73,8 @@ export default function InquiryForm({ productName, isEol }: InquiryFormProps) {
         <p className="text-sm text-gray-500">Мы свяжемся с вами в ближайшее время.</p>
         <button
           onClick={() => setSubmitted(false)}
-          className="mt-2 text-sm text-cyan-600 hover:underline"
+          className="mt-2 text-sm hover:underline"
+          style={{ color: '#F5921E' }}
         >
           Отправить ещё одну заявку
         </button>
@@ -106,7 +107,7 @@ export default function InquiryForm({ productName, isEol }: InquiryFormProps) {
           value={form.name}
           onChange={handleChange}
           placeholder="Иван Иванов"
-          className={`w-full rounded-md border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-cyan-500 transition-shadow ${
+          className={`w-full rounded-md border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-orange-400 transition-shadow ${
             errors.name ? 'border-red-400' : 'border-gray-300'
           }`}
         />
@@ -124,7 +125,7 @@ export default function InquiryForm({ productName, isEol }: InquiryFormProps) {
           value={form.email}
           onChange={handleChange}
           placeholder="ivan@company.ru"
-          className={`w-full rounded-md border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-cyan-500 transition-shadow ${
+          className={`w-full rounded-md border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-orange-400 transition-shadow ${
             errors.email ? 'border-red-400' : 'border-gray-300'
           }`}
         />
@@ -140,7 +141,7 @@ export default function InquiryForm({ productName, isEol }: InquiryFormProps) {
           value={form.phone}
           onChange={handleChange}
           placeholder="+7 (___) ___-__-__"
-          className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-cyan-500 transition-shadow"
+          className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-orange-400 transition-shadow"
         />
       </div>
 
@@ -153,7 +154,7 @@ export default function InquiryForm({ productName, isEol }: InquiryFormProps) {
           value={form.company}
           onChange={handleChange}
           placeholder="ООО «Ромашка»"
-          className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-cyan-500 transition-shadow"
+          className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-orange-400 transition-shadow"
         />
       </div>
 
@@ -168,7 +169,7 @@ export default function InquiryForm({ productName, isEol }: InquiryFormProps) {
           onChange={handleChange}
           rows={4}
           placeholder="Опишите ваш запрос..."
-          className={`w-full rounded-md border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-cyan-500 transition-shadow resize-none ${
+          className={`w-full rounded-md border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-orange-400 transition-shadow resize-none ${
             errors.message ? 'border-red-400' : 'border-gray-300'
           }`}
         />
@@ -179,12 +180,12 @@ export default function InquiryForm({ productName, isEol }: InquiryFormProps) {
         type="submit"
         disabled={loading}
         className="flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold text-white transition-colors disabled:opacity-60"
-        style={{ backgroundColor: loading ? '#0e7490' : '#0891B2' }}
+        style={{ backgroundColor: loading ? '#d4780f' : '#F5921E' }}
         onMouseEnter={(e) => {
-          if (!loading) e.currentTarget.style.backgroundColor = '#0e7490'
+          if (!loading) e.currentTarget.style.backgroundColor = '#d4780f'
         }}
         onMouseLeave={(e) => {
-          if (!loading) e.currentTarget.style.backgroundColor = '#0891B2'
+          if (!loading) e.currentTarget.style.backgroundColor = '#F5921E'
         }}
       >
         <Send size={16} />

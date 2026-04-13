@@ -15,7 +15,7 @@ export default function ProductTabs({
   const tabCls = (active: boolean) =>
     `px-4 py-2 text-sm font-medium border-b-2 transition-colors ${
       active
-        ? 'border-cyan-500 text-cyan-600'
+        ? 'border-orange-500 text-orange-500'
         : 'border-transparent text-gray-500 hover:text-gray-700'
     }`
 
@@ -58,9 +58,9 @@ export default function ProductTabs({
             <li key={doc.name}>
               <a
                 href={doc.url}
-                className="flex items-center gap-2 px-4 py-3 rounded-lg border border-gray-200 hover:border-cyan-300 hover:bg-cyan-50 transition-colors text-sm text-gray-700 font-medium"
+                className="flex items-center gap-2 px-4 py-3 rounded-lg border border-gray-200 hover:border-orange-300 hover:bg-orange-50 transition-colors text-sm text-gray-700 font-medium"
               >
-                <FileText size={16} className="text-cyan-500 shrink-0" />
+                <FileText size={16} style={{ color: '#F5921E' }} className="shrink-0" />
                 {doc.name}
               </a>
             </li>

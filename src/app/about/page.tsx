@@ -17,7 +17,7 @@ export default function AboutPage() {
             { value: '1000+', label: 'корпоративных клиентов' },
           ].map(({ value, label }) => (
             <div key={label} className="text-center p-6 bg-gray-50 rounded-xl border border-gray-200">
-              <div className="text-3xl font-bold mb-1" style={{ color: '#0891B2' }}>{value}</div>
+              <div className="text-3xl font-bold mb-1" style={{ color: '#F5921E' }}>{value}</div>
               <div className="text-sm text-gray-500">{label}</div>
             </div>
           ))}

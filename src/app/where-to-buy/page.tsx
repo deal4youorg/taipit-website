@@ -22,10 +22,10 @@ export default function WhereToBuyPage() {
           <a
             key={d.name}
             href={d.url}
-            className="block bg-white rounded-xl border border-gray-200 p-5 hover:border-cyan-300 hover:shadow-md transition-all"
+            className="block bg-white rounded-xl border border-gray-200 p-5 hover:border-orange-300 hover:shadow-md transition-all"
           >
             <div className="flex items-center gap-2 mb-3">
-              <Globe size={18} style={{ color: '#0891B2' }} />
+              <Globe size={18} style={{ color: '#F5921E' }} />
               <span className="font-semibold text-gray-900">{d.name}</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-500">

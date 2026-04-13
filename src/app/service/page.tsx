@@ -29,17 +29,17 @@ export default function ServicePage() {
             <h2 className="text-lg font-semibold text-gray-900 mb-4">{c.city}</h2>
             <div className="space-y-3">
               <div className="flex items-start gap-3 text-sm">
-                <MapPin size={16} style={{ color: '#0891B2' }} className="mt-0.5 shrink-0" />
+                <MapPin size={16} style={{ color: '#F5921E' }} className="mt-0.5 shrink-0" />
                 <span className="text-gray-600">{c.address}</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
-                <Phone size={16} style={{ color: '#0891B2' }} className="shrink-0" />
-                <a href={`tel:${c.phone.replace(/\D/g, '')}`} className="text-gray-600 hover:text-cyan-600">
+                <Phone size={16} style={{ color: '#F5921E' }} className="shrink-0" />
+                <a href={`tel:${c.phone.replace(/\D/g, '')}`} className="text-gray-600 hover:text-orange-500">
                   {c.phone}
                 </a>
               </div>
               <div className="flex items-center gap-3 text-sm">
-                <Clock size={16} style={{ color: '#0891B2' }} className="shrink-0" />
+                <Clock size={16} style={{ color: '#F5921E' }} className="shrink-0" />
                 <span className="text-gray-600">{c.hours}</span>
               </div>
             </div>

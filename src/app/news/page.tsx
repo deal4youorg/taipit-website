@@ -31,10 +31,10 @@ export default function NewsPage() {
           <Link
             key={article.slug}
             href={`/news/${article.slug}`}
-            className="block bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md hover:border-cyan-300 transition-all"
+            className="block bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md hover:border-orange-300 transition-all"
           >
             <p className="text-xs text-gray-400 mb-2">{article.date}</p>
-            <h2 className="text-lg font-semibold text-gray-900 hover:text-cyan-600 transition-colors mb-2">
+            <h2 className="text-lg font-semibold text-gray-900 hover:text-orange-500 transition-colors mb-2">
               {article.title}
             </h2>
             <p className="text-sm text-gray-500 leading-relaxed">{article.excerpt}</p>

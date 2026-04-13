@@ -28,7 +28,7 @@ export default async function CategoryPage({ params }: { params: Params }) {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <nav className="text-sm text-gray-400 mb-6">
-        <Link href="/catalog" className="hover:text-cyan-600">Каталог</Link>
+        <Link href="/catalog" className="hover:text-orange-500">Каталог</Link>
         <span className="mx-2">/</span>
         <span className="text-gray-700 font-medium">{categoryName}</span>
       </nav>
@@ -57,7 +57,7 @@ export default async function CategoryPage({ params }: { params: Params }) {
                   </span>
                 )}
               </div>
-              <h3 className="font-semibold text-sm text-gray-900 group-hover:text-cyan-600 transition-colors leading-snug">
+              <h3 className="font-semibold text-sm text-gray-900 group-hover:text-orange-500 transition-colors leading-snug">
                 {product.name}
               </h3>
               <p className="text-xs text-gray-400 mt-1">SKU: {product.sku}</p>

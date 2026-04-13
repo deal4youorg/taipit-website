@@ -59,7 +59,7 @@ export default async function ProductPage({ params }: { params: Params }) {
             {[1, 2, 3].map((i) => (
               <div
                 key={i}
-                className="w-16 h-16 bg-gray-100 rounded-lg border-2 border-transparent hover:border-cyan-400 cursor-pointer flex items-center justify-center"
+                className="w-16 h-16 bg-gray-100 rounded-lg border-2 border-transparent hover:border-orange-400 cursor-pointer flex items-center justify-center"
               >
                 <Box size={24} className="text-gray-300" />
               </div>

@@ -23,19 +23,19 @@ export default function CatalogPage() {
           <Link
             key={href}
             href={href}
-            className="group bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md hover:border-cyan-300 transition-all"
+            className="group bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md hover:border-orange-300 transition-all"
           >
             <div
               className="w-12 h-12 rounded-lg flex items-center justify-center mb-4"
-              style={{ backgroundColor: '#EFF6FF' }}
+              style={{ backgroundColor: '#FFF4E8' }}
             >
-              <Icon size={24} style={{ color: '#0891B2' }} />
+              <Icon size={24} style={{ color: '#F5921E' }} />
             </div>
             <h2 className="font-semibold text-gray-900 mb-1">{title}</h2>
             {count > 0 && (
               <p className="text-sm text-gray-400">{count} позиций</p>
             )}
-            <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-cyan-600">
+            <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium" style={{ color: '#F5921E' }}>
               Смотреть <ArrowRight size={14} />
             </span>
           </Link>

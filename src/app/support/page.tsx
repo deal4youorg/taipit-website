@@ -59,9 +59,9 @@ export default function SupportPage() {
             <a
               key={name}
               href="#"
-              className="flex items-center gap-3 px-5 py-4 bg-white border border-gray-200 rounded-lg hover:border-cyan-300 hover:bg-cyan-50 transition-colors"
+              className="flex items-center gap-3 px-5 py-4 bg-white border border-gray-200 rounded-lg hover:border-orange-300 hover:bg-orange-50 transition-colors"
             >
-              <FileText size={20} style={{ color: '#0891B2' }} className="shrink-0" />
+              <FileText size={20} style={{ color: '#F5921E' }} className="shrink-0" />
               <div className="flex-1">
                 <p className="text-sm font-medium text-gray-800">{name}</p>
               </div>
